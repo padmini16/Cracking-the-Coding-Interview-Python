@@ -1,0 +1,18 @@
+def uniqueString():
+    print("Enter a string")
+    strinp=input()
+    value=True
+    dnr={}
+    for i in range(0,len(strinp)-1):
+        if strinp[i] not in dnr:
+            dnr[strinp[i]]=1
+        else:
+            value= False
+    if value==True:
+        print("String is unique")
+    else: 
+        print("String is not unique")
+
+uniqueString()
+    
+     
